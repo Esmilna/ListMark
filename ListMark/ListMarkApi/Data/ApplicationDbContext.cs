@@ -10,7 +10,7 @@ namespace ListMarkApi.Data
             : base(options) { }
 
         public DbSet<Product> Product { get; set; }
-        public DbSet<Category> Categorie { get; set; }
+        public DbSet<Category> Category { get; set; }
         public DbSet<User> User { get; set; }
         public DbSet<Details> Details { get; set; }
         public DbSet<Stock> Stock { get; set; }
@@ -19,6 +19,9 @@ namespace ListMarkApi.Data
         public DbSet<Permission> Permission { get; set; }
         public DbSet<Supermarket> Supermarket { get; set; }
         public DbSet<Commonfields> Commonfields { get; set; }
+        public DbSet<List> List { get; set; }
+        public DbSet<ListDetails> ListDetails { get; set; }
+        public DbSet<ProductList> ProductList { get; set; }
 
 
         /*protected override void OnModelCreating(ModelBuilder modelBuilder)

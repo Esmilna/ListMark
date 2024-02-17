@@ -57,6 +57,7 @@ namespace ListMarkApi.Repository
 
         public bool UpdateBrand(Brand brand)
         {
+
             _db.Brand.Update(brand);
             return Save();
         }
