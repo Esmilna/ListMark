@@ -8,13 +8,13 @@ namespace ListMarkApi.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public int ListId { get; set; }
-        public int ProductId { get; set; }
+        public int ListNumberId { get; set; }
+        public int ProductNumberId { get; set; }
 
         [ForeignKey("ProductId")]
-        public Product Product { get; set; }
+        public Product? Product { get; set; }
 
         [ForeignKey("ListId")]
-        public List List { get; set; }
+        public List? List { get; set; }
     }
 }

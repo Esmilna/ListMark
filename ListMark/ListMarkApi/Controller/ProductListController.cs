@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ListMarkApi.Controller
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class ProductListController : ControllerBase
     {
         private readonly IProductListRepository _productlistRepository;

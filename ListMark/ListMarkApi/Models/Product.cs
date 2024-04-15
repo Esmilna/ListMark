@@ -16,11 +16,12 @@ namespace ListMarkApi.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public int BrandId { get; set; }
+        public string? Image { get; set; }
         public int CategoryId { get; set; }
         [ForeignKey ("CategoryId")]
-        public Category Category { get; set; }
+        public Category? Category { get; set; }
         [ForeignKey ("BrandId")]
-        public Brand Brand { get; set; }
+        public Brand? Brand { get; set; }
 
     }
 }
